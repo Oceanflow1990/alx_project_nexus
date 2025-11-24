@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import React from "react";
 import { form } from "sanity/structure";
 interface Props {
@@ -11,7 +12,11 @@ const PriceFormatter = ({ amount, className }: Props) => {
     currency: "NGN",
     minimumFractionDigits: 2,
   });
-  return <span>{formattedPrice}</span>;
+  return (
+    <span className={cn("text-sm font-semibold text-darkColor", className)}>
+      {formattedPrice}
+    </span>
+  );
 };
 
 export default PriceFormatter;

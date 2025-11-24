@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-
 import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ClerkProvider } from "@clerk/nextjs";
 import localFont from "next/font/local";
+import { Toaster } from "@/components/ui/toaster";
 
 const raleway = localFont({
   src: "../fonts/Raleway.woff2",
@@ -29,6 +29,15 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <Toaster
+            position="bottom-right"
+            toastOptions={{
+              style: {
+                background: "#000000",
+                color: "#ffffff",
+              },
+            }}
+          />
         </body>
       </html>
     </ClerkProvider>
