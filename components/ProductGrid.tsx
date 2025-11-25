@@ -5,7 +5,7 @@ import { productType } from "@/constants";
 import { client } from "@/sanity/lib/client";
 import { Product } from "@/sanity.types";
 import ProductCard from "./ProductCard";
-import NoProdcutsAvail from "./NoProdcutsAvail";
+import NoProdcutsAvail from "./NoProductsAvailable";
 import { motion, AnimatePresence } from "motion/react";
 import { Loader2 } from "lucide-react";
 
