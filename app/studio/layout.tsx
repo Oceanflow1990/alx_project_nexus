@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import React from "react";
+import { fascinate } from "../fonts/font";
 
 export const metadata: Metadata = {
   title: "ecommerce backend",
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
 };
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html lang="en">
+    <html lang="en" className={`${fascinate.variable}`}>
       <body>{children}</body>
     </html>
   );
