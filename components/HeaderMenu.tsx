@@ -17,12 +17,12 @@ const HeaderMenu = ({ categories }: { categories: CATEGORIES_QUERYResult }) => {
       >
         Home
         <span
-          className={`absolute -bottom-0.5 left-1/2 w-0 h-0.5 bg-darkColor hoverEffect group-hover:w-1/2 group-hover:left-0 ${
+          className={`absolute -bottom-0.5 left-1/2 w-0 h-0.5 bg-[#7c3aed] hoverEffect group-hover:w-1/2 group-hover:left-0 ${
             pathname === "/" && "w-1/2"
           }`}
         />
         <span
-          className={`absolute -bottom-0.5 right-1/2 w-0 h-0.5 bg-darkColor hoverEffect group-hover:w-1/2 group-hover:right-0 ${
+          className={`absolute -bottom-0.5 right-1/2 w-0 h-0.5 bg-[#7c3aed] hoverEffect group-hover:w-1/2 group-hover:right-0 ${
             pathname === "/" && "w-1/2"
           }`}
         />
@@ -38,12 +38,12 @@ const HeaderMenu = ({ categories }: { categories: CATEGORIES_QUERYResult }) => {
         >
           {category?.title}
           <span
-            className={`absolute -bottom-0.5 left-1/2 w-0 h-0.5 bg-darkColor hoverEffect group-hover:w-1/2 group-hover:left-0 ${
+            className={`absolute -bottom-0.5 left-1/2 w-0 h-0.5 bg-[#7c3aed] hoverEffect group-hover:w-1/2 group-hover:left-0 ${
               pathname === `/category/${category?.slug?.current}` && "w-1/2"
             }`}
           />
           <span
-            className={`absolute -bottom-0.5 right-1/2 w-0 h-0.5 bg-darkColor hoverEffect group-hover:w-1/2 group-hover:right-0 ${
+            className={`absolute -bottom-0.5 right-1/2 w-0 h-0.5 bg-[#7c3aed] hoverEffect group-hover:w-1/2 group-hover:right-0 ${
               pathname === `/category/${category?.slug?.current}` && "w-1/2"
             }`}
           />

@@ -13,20 +13,20 @@ const Footer = () => {
       <Container>
         <FooterTop />
         <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="space-y-4">
-            <Logo>E-commerce</Logo>
+          <div className="space-y-4 ">
+            <Logo className="text-[#4f46e5]">E-commerce</Logo>
             <p className="text-gray-600 text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ex ad
               at vitae esse. Vero fuga laborum disti.
             </p>
             <SocialMedia
               className="text-darkColor/60"
-              iconClassName="border-darkColor/60 hover:border-darkColor hover:text-darkColor"
-              tooltipClassName="bg-darkColor text-white"
+              iconClassName="border-darkColor/60 hover:border-darkColor hover:text-darkColor text-[#4f46e5]"
+              tooltipClassName="bg-darkColor text-white "
             />
           </div>
           <div>
-            <h3 className="font-semibold text-darkColor mb-4">Quick Links</h3>
+            <h3 className="font-semibold text-[#4f46e5] mb-4">Quick Links</h3>
             <div className="flex flex-col gap-3">
               {quickLinksData?.map((item) => (
                 <Link
@@ -40,7 +40,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h3 className="font-semibold text-darkColor mb-4">Categories</h3>
+            <h3 className="font-semibold text-[#4f46e5] mb-4">Categories</h3>
             <div className="flex flex-col gap-3">
               {categoriesData?.map((item) => (
                 <Link
@@ -54,7 +54,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h3 className="font-semibold text-darkColor mb-4">Newsletter</h3>
+            <h3 className="font-semibold  mb-4 text-[#4f46e5]">Newsletter</h3>
             <p className="text-gray-600 text-sm mb-4">
               Subscribe to our newsletter to receive updates and exclusive
               offers.
@@ -68,7 +68,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="w-full bg-darkColor text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors"
+                className="w-full bg-[#4f46e5] text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors"
               >
                 Subscribe
               </button>
